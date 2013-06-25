@@ -131,7 +131,7 @@ end
 def main(step_size)
   sample_space = ('a'..'z').to_a + ('A'..'Z').to_a + [' ']
 
-  ARGV[0..-1].each do |target|
+  ARGV.each do |target|
     a = HelloGenetic.new(sample_space, 300, target)
     puts "Evolving towards #{target}..."
     3000.times do |iter|
