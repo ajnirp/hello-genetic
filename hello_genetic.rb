@@ -131,14 +131,16 @@ end
 def main(step_size)
   sample_space = ('a'..'z').to_a + ('A'..'Z').to_a + [' ']
 
-  target = gets.chomp
-  a = HelloGenetic.new(sample_space, 300, target)
-
-  3000.times do |iter|
-    a.run
-    if (iter+1) % step_size == 0
-      puts "Iteration #{iter+1} best: #{a.fittest}"
+  ARGV[0..-1].each do |target|
+    a = HelloGenetic.new(sample_space, 300, target)
+    puts "Evolving towards #{target}..."
+    3000.times do |iter|
+      a.run
+      if (iter+1) % step_size == 0
+        puts "Iteration #{iter+1} best: #{a.fittest}"
+      end
     end
+    puts "="*10
   end
 end
 
