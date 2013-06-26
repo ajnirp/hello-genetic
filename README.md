@@ -7,7 +7,7 @@ I wanted to learn how to use genetic algorithms, so I wrote this simple set of f
 
 in a Terminal window or in cmd.exe. The algorithm will try to evolve a bunch of random strings towards the given "target string".
 
-Each argument must be a string consisting of only alphabetic characters and/or spaces) and press Enter. You can see the progress that the algorithm is making at regular intervals.
+Each argument must be a string consisting of only alphabetic characters and/or spaces). You can see the progress that the algorithm is making at regular intervals.
 
 If you want an argument to contain spaces, surround it with double quotes, like so:
 
