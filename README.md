@@ -1,14 +1,20 @@
 Hello Genetic
 =============
 
-I wanted to learn how to use genetic algorithms, so I wrote this simple set of functions. To run it, do
+I wanted to learn how to use genetic algorithms, so I wrote this simple set of functions. All you need to run this file is the ruby interpreter. To run it, do
 
-    ruby hello_genetic.rb
+    ruby hello_genetic.rb <argument>+
 
-in a Terminal window or in cmd.exe. Enter a string (consisting of only alphabetic characters and/or spaces) and press Enter. You will be shown the progress that the algorithm is making at regular intervals. To change the frequency of this display, open up the hello_genetic.rb file and edit the last line of the file from
+in a Terminal window or in cmd.exe. The algorithm will try to evolve a bunch of random strings towards the given "target string".
 
-    main(250)
+Each argument must be a string consisting of only alphabetic characters and/or spaces) and press Enter. You can see the progress that the algorithm is making at regular intervals.
 
-to something more or less frequent. For example, if you feel 250 is too frequent, try changing it to
+If you want an argument to contain spaces, surround it with double quotes, like so:
 
-    main(500)
+    ruby hello_genetic.rb "hello world"
+    
+because if you were to do
+
+    ruby hello_genetic.rb hello world
+    
+the program would treat "hello" and "world" as separate arguments, and evolve towards them separately.
