@@ -1,7 +1,7 @@
 Hello Genetic
 =============
 
-I wanted to learn how to use genetic algorithms, so I wrote this simple set of functions. All you need to run this file is the ruby interpreter. To run it, do
+I wanted to learn how to use genetic algorithms, so I wrote this simple set of functions. All you need to run this file is the `ruby` interpreter. To run it, do
 
     ruby hello_genetic.rb <argument>+
 
@@ -17,4 +17,4 @@ because if you were to do
 
     ruby hello_genetic.rb hello world
     
-the program would treat "hello" and "world" as separate arguments, and evolve towards them separately.
+the program would treat `hello` and `world` as separate arguments, and evolve towards them separately.
